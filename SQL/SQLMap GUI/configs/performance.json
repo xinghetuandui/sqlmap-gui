@@ -1,0 +1,15 @@
+{
+    "cpu_warning": 80,
+    "memory_warning": 1024,
+    "response_warning": 5000,
+    "max_threads": 10,
+    "max_queue_size": 1000,
+    
+    "optimization": {
+        "enable_auto_optimize": true,
+        "cache_size": 1000,
+        "batch_size": 50,
+        "thread_adjust_step": 1,
+        "memory_cleanup_threshold": 800
+    }
+} 

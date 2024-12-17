@@ -1,0 +1,21 @@
+{
+  "id": 2,
+  "name": "深度扫描",
+  "description": "使用全面的选项进行深度扫描",
+  "target_config": {
+    "method": "GET",
+    "headers": "User-Agent: Mozilla/5.0"
+  },
+  "scan_options": {
+    "level": 5,
+    "risk": 3,
+    "threads": 5,
+    "getDbs": true,
+    "getTables": true,
+    "getColumns": true,
+    "technique": "BEUSTQ"
+  },
+  "advanced_options": null,
+  "create_time": "2024-12-17T10:57:28.246757",
+  "last_used": null
+}

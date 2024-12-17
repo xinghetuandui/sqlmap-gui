@@ -1,0 +1,58 @@
+{
+    "sql_injection": {
+        "name": "SQL注入",
+        "description": "SQL注入漏洞允许攻击者向数据库发送恶意的SQL查询",
+        "base_cvss": 8.5,
+        "impact": {
+            "confidentiality": 0.9,
+            "integrity": 0.7,
+            "availability": 0.5,
+            "scope": 0.8
+        },
+        "metrics": {
+            "attack_vector": 0.7,
+            "attack_complexity": 0.4,
+            "privileges_required": 0.1,
+            "user_interaction": 0.0,
+            "exploit_maturity": 0.9
+        },
+        "remediation": [
+            "使用参数化查询替代字符串拼接",
+            "对所有用户输入进行严格的类型检查和验证",
+            "使用最小权限原则配置数据库账户",
+            "启用WAF并配置SQL注入规则"
+        ],
+        "references": [
+            "https://owasp.org/www-community/attacks/SQL_Injection",
+            "https://portswigger.net/web-security/sql-injection"
+        ]
+    },
+    "blind_sql_injection": {
+        "name": "盲注SQL注入",
+        "description": "��注SQL注入允许攻击者在看不到错误信息的情况下进行SQL注入攻击",
+        "base_cvss": 7.5,
+        "impact": {
+            "confidentiality": 0.7,
+            "integrity": 0.5,
+            "availability": 0.3,
+            "scope": 0.6
+        },
+        "metrics": {
+            "attack_vector": 0.6,
+            "attack_complexity": 0.7,
+            "privileges_required": 0.1,
+            "user_interaction": 0.0,
+            "exploit_maturity": 0.8
+        },
+        "remediation": [
+            "使用参数化查询替代字符串拼接",
+            "实施输入验证和过滤",
+            "使用ORM框架",
+            "配置错误显示策略"
+        ],
+        "references": [
+            "https://owasp.org/www-community/attacks/Blind_SQL_Injection",
+            "https://portswigger.net/web-security/sql-injection/blind"
+        ]
+    }
+} 

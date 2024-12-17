@@ -1,0 +1,18 @@
+# GUI
+PyQt5==5.15.9
+PyQt5-Qt5==5.15.2
+PyQt5-sip==12.12.2
+PyQtChart>=5.15.6
+
+# Core
+sqlmap>=1.6.12
+requests>=2.31.0
+urllib3>=2.0.3
+PySocks>=1.7.1
+
+# Utils
+psutil>=5.9.5
+matplotlib>=3.7.1
+
+# Build
+pyinstaller>=6.3.0

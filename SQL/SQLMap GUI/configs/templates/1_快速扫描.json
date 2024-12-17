@@ -1,0 +1,17 @@
+{
+  "id": 1,
+  "name": "快速扫描",
+  "description": "使用基本选项进行快速扫描",
+  "target_config": {
+    "method": "GET",
+    "headers": "User-Agent: Mozilla/5.0"
+  },
+  "scan_options": {
+    "level": 1,
+    "risk": 1,
+    "batch": true
+  },
+  "advanced_options": null,
+  "create_time": "2024-12-17T10:57:28.246757",
+  "last_used": null
+}

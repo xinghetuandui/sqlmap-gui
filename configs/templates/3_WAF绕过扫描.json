@@ -1,0 +1,27 @@
+{
+  "id": 3,
+  "name": "WAF绕过扫描",
+  "description": "针对有WAF保护的目标的扫描配置",
+  "target_config": {
+    "method": "GET",
+    "headers": "User-Agent: Mozilla/5.0"
+  },
+  "scan_options": {
+    "level": 3,
+    "risk": 2
+  },
+  "advanced_options": {
+    "waf_config": {
+      "techniques": [
+        "随机大小写",
+        "URL编码",
+        "Unicode编码"
+      ],
+      "delay": 2,
+      "retries": 3,
+      "random_agent": true
+    }
+  },
+  "create_time": "2024-12-17T10:57:28.246757",
+  "last_used": null
+}
